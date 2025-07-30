@@ -170,3 +170,13 @@ function save() {
     }
 }
 
+
+
+// close popup
+document.addEventListener("click", (e) => {
+    const isOutsideGoal = !goalContainer.contains(e.target) && !e.target.closest("#setGoalBtn");
+    const isOutsideSetting = !settingContainer.contains(e.target) && !e.target.closest("#settingBtn");
+
+    if (isOutsideGoal) goalContainer.hidden = true;
+    if (isOutsideSetting) settingContainer.hidden = true;
+});
