@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Naam Jap Counter</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <script src="https://kit.fontawesome.com/a2fa536777.js" crossorigin="anonymous" defer></script>
+   
+</head>
+
+<body>
+    <div class="container">
+        <div class="app">
+            <!-- Mantra Display -->
+            <h2 class="mantra-text" hidden></h2>
+
+            <!-- Tap Counter Circle -->
+            <div class="counter-circle">
+                <span class="count" id="count">0</span>
+            </div>
+
+            <!-- Goal Progress -->
+            <div class="goal-progress">
+                <span id="progressText">0 / 108</span>
+                <progress id="progressBar" max="108" value="0"></progress>
+            </div>
+
+            <!-- tap area -->
+             <div class="tapArea">
+                <h3>Tap Here</h3>
+             </div>
+
+            <!-- Bottom Navigation -->
+            <nav class="bottom-nav">
+                <button id="resetBtn">
+                    <i class="fa-solid fa-broom"></i><br/>
+                    <span>Reset</span>
+                </button>
+                <button id="saveBtn">
+                    <i class="fa-solid fa-bookmark"></i><br />
+                    <span>Save</span>
+                </button>
+                <button id="setGoalBtn">
+                    <i class="fa-solid fa-bullseye"></i><br />
+                    <span>Goal</span>
+                </button>
+                <button id="toggleSoundBtn">
+                    <i class="fa-solid fa-bell"></i><br />
+                    <span>Sound</span>
+                </button>
+                <button id="settingBtn">
+                    <i class="fa-solid fa-gear"></i><br />
+                    <span>Setting</span>
+                </button>
+            </nav>
+
+
+            <!-- History Section -->
+            <!-- <div class="history" id="history"> -->
+            <!-- <h3>Saved Sessions</h3> -->
+            <!-- <ul id="sessionList"> -->
+            <!-- Saved sessions will be appended here -->
+            <!-- </ul> -->
+            <!-- </div> -->
+
+            <!-- custom goal toggle box -->
+            <div class="goalContainer" hidden>
+                <form>
+                    <input type="text" name="goalInput" id="goalInput" placeholder="Enter goal number">
+                    <div class="goalButtons">
+                        <button class="goalOkBtn">Save</button>
+                        <button class="goalCancelBtn">Cancel</button>
+                    </div>
+                </form>
+            </div>
+
+            <!-- setting popup -->
+            <div class="settingContainer" hidden>
+                <ul class="settingList">
+                    <li><a href="savedCount/saved.html" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-bookmark"></i> Saved count</a></li>
+                    <li><a href="https://github.com/asyncPranav/nam-jap" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-code"></i> Source code</a></li>
+                    <li><a href="https://github.com/asyncPranav" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-user-ninja"></i> Developer</a></li>
+                </ul>
+            </div>
+
+            <!-- audio -->
+             <audio src="assets/alert.mp3"></audio>
+        </div>
+    </div>
+
+</body>
+
+</html>

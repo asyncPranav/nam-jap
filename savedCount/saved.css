@@ -1,0 +1,192 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body {
+    background-color: #161616;
+    color: #f2f2f2;
+    font-family: "Segoe UI", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.container {
+    width: 100%;
+    max-width: 1000px;
+    padding: 3.5rem 2.5rem;
+    min-height: 100vh;
+    position: relative;
+}
+
+h1 {
+    font-size: 3.5rem;
+    text-align: center;
+    margin-bottom: 8rem;
+    color: rgb(226, 226, 226);
+}
+
+
+
+.history-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 0 0.5rem;
+    /* border: 2px solid gold; */
+    margin: 5rem 0;
+}
+
+
+.session-card {
+    background: rgba(255, 255, 255, 0.04); /* subtle light over dark */
+    border: 1.5px solid rgba(200, 180, 255, 0.12); /* soft lavender border */
+    border-radius: 12px;
+    padding: 0.6rem 1.2rem 1rem;
+    color: #f2f2f2;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+
+    transition: transform 0.2s ease, border 0.3s ease;
+    min-height: 90px;
+    height: auto;
+}
+
+.session-card:hover {
+    transform: scale(1.01);
+    border-color: #c9b6ff;
+}
+
+
+
+/* Title */
+.session-count {
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: #c9b6ff;
+    /* border: 1px solid red; */
+    margin: 0;
+    line-height: 1;
+}
+
+/* goal container */
+.goal-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Goal Progress */
+.session-goal {
+    font-size: 1rem;
+    color: #7d96c9;
+    margin-top: 0.4rem;
+}
+
+/* delete */
+.delete-btn {
+    align-self: flex-end;
+    background: none;
+    border: none;
+    color: #888;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transform: scale(1);
+    transition: color 0.2s ease-in-out;
+}
+
+.delete-btn:active {
+    transform: scale(1.2);
+}
+
+/* Meta Row */
+.session-meta {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1rem;
+    color: #888;
+    margin-top: 0.7rem;
+}
+
+.no-data {
+    font-size: 1.4rem;
+    text-align: center;
+    margin-top: 4rem;
+    color: #aaa;
+}
+
+/* Home Button Container */
+.homeBtn {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    z-index: 999; /* ensure it stays above everything */
+}
+
+/* Icon Button */
+.homeBtn i {
+    padding: 0.8rem;
+    background: rgba(24, 24, 24, 0.4);
+    backdrop-filter: blur(10px);
+    border-radius: 50%;
+    border: 2px solid rgba(180, 150, 255, 0.2); 
+    font-size: 1.5rem;
+    color: #c9b6ff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease, background 0.2s ease;
+    cursor: pointer;
+}
+
+.homeBtn i:hover {
+    border: 2px solid rgba(180, 150, 255, 0.458);
+    background: rgba(44, 44, 44, 0.5);
+}
+
+.homeBtn i:active {
+    border: 2px solid rgba(180, 150, 255, 0.458);
+    transform: scale(1.12);
+}
+
+
+/* footer */
+footer {
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    font-size: 1.3rem;
+    transform: translate(-50%);
+}
+
+footer p a {
+    text-decoration: none;
+    color: #b59af2;
+}
+
+footer p a:hover {
+    color: #8d72cc;
+}
+
+@media (min-width: 600px) {
+    .history-container {
+        grid-template-columns: 1fr 1fr;
+        /* 2 columns on wider screens */
+    }
+}
+
+@media (max-width: 500px) {
+    .session-meta {
+        font-size: 0.85rem;
+    }
+}
