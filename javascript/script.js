@@ -31,6 +31,32 @@ const settingBtn = document.querySelector("#settingBtn");
 // tap area
 const tapArea = document.querySelector(".tapArea");
 
+// custom themes
+const themes = {
+    tomato: {
+        "--tomato": "rgb(255, 99, 71)",
+        "--tomatoLight": "rgb(255, 108, 82)",
+        "--tomatoLighter": "rgb(255, 120, 106)",
+        "--tomatoLightest": "rgba(255, 119, 95, 0.267)"
+    },
+    purple: {
+        "--tomato": "#c9b6ff",
+        "--tomatoLight": "#c9b6ff",
+        "--tomatoLighter": "#c9b6ff",
+        "--tomatoLightest": "rgba(201, 182, 255, 0.25)"
+    }
+};
+
+// apply saved theme in local storage
+const savedTheme = localStorage.getItem("activeTheme");
+
+if (savedTheme && themes[savedTheme]) {
+    const root = document.documentElement;
+    for (const [key, value] of Object.entries(themes[savedTheme])) {
+        root.style.setProperty(key, value);
+    }
+}
+
 // global variable
 let count = 0;
 let goal = 108; // default goal
@@ -44,7 +70,6 @@ tapArea.addEventListener("click", () => {
     tapCount.textContent = count;
     progressBar.value = count;
     progressText.textContent = `${count} / ${goal}`;
-
 
     if (count === goal) {
         audio.play();
@@ -77,15 +102,12 @@ tapArea.addEventListener("click", () => {
 bottomNav.addEventListener("click", (e) => {
     if (e.target.closest("#resetBtn")) {
         reset();
-
     }
     if (e.target.closest("#saveBtn")) {
         save();
-
     }
     if (e.target.closest("#setGoalBtn")) {
         goalContainer.hidden = !goalContainer.hidden;
-
     }
     if (e.target.closest("#toggleSoundBtn")) {
         if (toggleSoundBtn.firstElementChild.classList.contains("fa-bell")) {
@@ -170,13 +192,37 @@ function save() {
     }
 }
 
-
-
 // close popup
 document.addEventListener("click", (e) => {
-    const isOutsideGoal = !goalContainer.contains(e.target) && !e.target.closest("#setGoalBtn");
-    const isOutsideSetting = !settingContainer.contains(e.target) && !e.target.closest("#settingBtn");
+    const isOutsideGoal =
+        !goalContainer.contains(e.target) && !e.target.closest("#setGoalBtn");
+    const isOutsideSetting =
+        !settingContainer.contains(e.target) &&
+        !e.target.closest("#settingBtn");
 
     if (isOutsideGoal) goalContainer.hidden = true;
     if (isOutsideSetting) settingContainer.hidden = true;
+});
+
+// apply theme on selecting from setting
+const themeItems = document.querySelectorAll(".theme"); //selected all theme -> return nodelist
+console.log(themeItems);
+
+themeItems.forEach((item) => {
+    item.addEventListener("click", () => {
+        const selected = item.dataset.theme;
+        console.log(selected);
+        const selectedTheme = themes[selected];
+        console.log(selectedTheme);
+
+        if (selectedTheme) {
+            const root = document.documentElement;
+            for (const [key, value] of Object.entries(selectedTheme)) {
+                root.style.setProperty(key, value);
+            }
+
+            // save selected theme
+            localStorage.setItem("activeTheme", selected);
+        }
+    });
 });

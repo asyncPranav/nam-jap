@@ -9,6 +9,7 @@ html {
     --tomato: rgb(255, 99, 71);
     --tomatoLight: rgb(255, 108, 82);
     --tomatoLighter: rgb(255, 120, 106);
+    --tomatoLightest: rgba(255, 119, 95, 0.267);
     --gold: rgb(211, 197, 118);
 
 }
@@ -152,7 +153,7 @@ h1 {
     border-radius: 50%;
     border: 2px solid rgba(180, 150, 255, 0.2);
     font-size: 1.8rem;
-    color: rgb(255, 226, 64);
+    color: var(--gold);
 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: transform 0.2s ease, background 0.2s ease;
@@ -180,7 +181,7 @@ footer {
 }
 
 footer p i{
-    color: rgb(255, 220, 18);
+    color: var(--gold);
 
 }
 

@@ -1,3 +1,31 @@
+// themes
+const themes = {
+    tomato: {
+        "--tomato": "rgb(255, 99, 71)",
+        "--tomatoLight": "rgb(255, 108, 82)",
+        "--tomatoLighter": "rgb(255, 120, 106)",
+        "--tomatoLightest": "rgba(255, 119, 95, 0.267)",
+        "--gold": "rgb(211, 197, 118)",
+    },
+    purple: {
+        "--tomato": "#b498ffff",
+        "--tomatoLight": "#c9b6ff",
+        "--tomatoLighter": "#c9b6ff",
+        "--tomatoLightest": "rgba(201, 182, 255, 0.25)",
+        "--gold": "#a9c6ff",
+    },
+};
+
+// Load theme from localStorage
+const savedTheme = localStorage.getItem("activeTheme");
+
+if (savedTheme && themes[savedTheme]) {
+    const root = document.documentElement;
+    for (const [key, value] of Object.entries(themes[savedTheme])) {
+        root.style.setProperty(key, value);
+    }
+}
+
 const container = document.getElementById("historyContainer");
 const sessions = JSON.parse(localStorage.getItem("sessions")) || [];
 
@@ -32,7 +60,8 @@ if (sessions.length === 0) {
         // add listener on delete btn
         const deleteBtn = card.querySelector(".delete-btn");
         deleteBtn.addEventListener("click", () => {
-            const allSessions = JSON.parse(localStorage.getItem("sessions")) || [];
+            const allSessions =
+                JSON.parse(localStorage.getItem("sessions")) || [];
 
             // Filter out the one with matching id
             const updatedSessions = allSessions.filter((s) => s.id !== id);
@@ -45,7 +74,8 @@ if (sessions.length === 0) {
 
             // Optional: show message if no sessions left
             if (updatedSessions.length === 0) {
-                container.innerHTML = '<p class="no-data">No saved sessions found.</p>';
+                container.innerHTML =
+                    '<p class="no-data">No saved sessions found.</p>';
             }
         });
     });

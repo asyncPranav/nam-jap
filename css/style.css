@@ -8,9 +8,10 @@ html {
     font-size: 62.5%;
     height: 100%;
 
-    --tomato : rgb(255, 99, 71);
-    --tomatoLight : rgb(255, 108, 82);
-    --tomatoLighter : rgb(255, 120, 106);
+    --tomato: rgb(255, 99, 71);
+    --tomatoLight: rgb(255, 108, 82);
+    --tomatoLighter: rgb(255, 120, 106);
+    --tomatoLightest: rgba(255, 119, 95, 0.267);
 }
 
 
@@ -29,6 +30,7 @@ body {
     width: 90%;
     max-width: 500px;
     /* border: 2px solid blue; */
+    overflow: visible;
 }
 
 .app {
@@ -40,6 +42,8 @@ body {
     position: relative;
     /* border: 2px solid gold; */
     height: 100%;
+
+    overflow: visible;
 }
 
 /* Mantra text */
@@ -59,7 +63,7 @@ body {
     background-color: #1f1f1f;
     /* background-color: #2c2c2c; */
     border-radius: 50%;
-    box-shadow: 0 0 40px rgba(255, 119, 95, 0.267);
+    box-shadow: 0 0 40px var(--tomatoLightest);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -71,7 +75,6 @@ body {
 .count {
     font-size: 5rem;
     font-weight: bold;
-    color: #c9b6ff;
     color: var(--tomatoLight);
 
 }
@@ -85,7 +88,7 @@ body {
     top: 0;
     left: 0;
     border-radius: 50%;
-    background: rgba(255, 119, 95, 0.15);
+    background: var(--tomatoLightest);
 
     transform: scale(1.01);
     /* just beyond the border */
@@ -170,7 +173,7 @@ body {
     font-size: 7rem;
     color: #212121;
     /* color: #2020208e; */
-     user-select: none;
+    user-select: none;
 }
 
 
@@ -337,24 +340,23 @@ body {
     bottom: 0rem;
     right: 0;
     z-index: 200;
-    /* border: 2px solid gold; */
-
 }
 
-.settingContainer h2{
+.settingContainer h2 {
     font-size: 2rem;
     padding: 1rem 1.5rem;
     letter-spacing: 0.12rem;
     color: var(--tomatoLight);
     margin-bottom: 3.5rem;
-    border-bottom: 1px solid var(--tomatoLighter);
+    border-bottom: 2px solid var(--tomatoLightest);
 }
 
-.settingContainer ul {
+.settingContainer .settingList {
     list-style: none;
     display: flex;
     flex-direction: column;
     gap: 2rem;
+    height: 100%;
 }
 
 .settingContainer ul li {
@@ -372,6 +374,7 @@ body {
     border: 2px solid transparent;
     border-radius: 0.7rem;
 
+    /* border: 2px solid red; */
 }
 
 .settingContainer ul li a i {
@@ -382,6 +385,7 @@ body {
 .settingContainer ul li a:hover {
     /* border: 2px solid rgba(231, 213, 109, 0.5); */
     border: 2px solid #bda6f569;
+    border: 2px solid var(--tomatoLightest);
     color: rgb(231, 231, 231);
 }
 
@@ -400,12 +404,84 @@ body {
 
 }
 
+/* theme switch */
+.theme-switcher {
+    position: relative;
+    font-size: 1.6rem;
+    color: rgb(190, 190, 190);
+    cursor: pointer;
+    padding: 1rem 1.5rem;
+    border-radius: 0.7rem;
+
+}
+
+.theme-switcher .theme-options {
+    display: none;
+    flex-direction: column;
+    gap: 1.5rem;
+
+    margin: 2rem 0;
+    padding: 1.5rem 1rem;
+
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 0.7rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+
+
+}
+
+.theme-options .theme {
+    padding: 0.5rem 1rem;
+    margin: 0 !important;
+    color: rgb(190, 190, 190);
+    border-radius: 5px;
+    transition: background 0.2s;
+}
+
+.theme-options .theme i{
+    margin-right: 0.2rem;
+}
+
+.theme-options .theme i.tomato {
+    color: tomato;
+}
+
+.theme-options .theme i.purple {
+    color: violet;
+}
+
+.theme-options .theme:hover {
+    color: rgb(231, 231, 231);
+}
+
+.theme-switcher:hover i{
+    color: deeppink;
+
+}
+
+.theme-switcher:hover{
+    color: rgb(231, 231, 231);
+    border: 2px solid var(--tomatoLightest);
+
+}
+
+.theme-switcher:hover .theme-options {
+    display: flex;
+}
+
+
+
+
+
+
+
 @media screen and (max-width: 400px) {
     .tapArea h3 {
         font-size: 6rem;
         /* border: 2px solid red; */
     }
 }
+
 @media screen and (max-width: 350px) {
     .tapArea h3 {
         font-size: 5.5rem;
