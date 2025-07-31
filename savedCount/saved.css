@@ -152,7 +152,7 @@ h1 {
     border-radius: 50%;
     border: 2px solid rgba(180, 150, 255, 0.2);
     font-size: 1.8rem;
-    color: rgb(255, 220, 19);
+    color: rgb(255, 226, 64);
 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: transform 0.2s ease, background 0.2s ease;
@@ -160,12 +160,12 @@ h1 {
 }
 
 .homeBtn i:hover {
-    border: 2px solid var(--tomato);
+    border: 2px solid var(--tomatoLight);
     background: rgba(44, 44, 44, 0.5);
 }
 
 .homeBtn i:active {
-    border: 2px solid var(--tomato);
+    border: 2px solid var(--tomatoLight);
     transform: scale(1.12);
 }
 
