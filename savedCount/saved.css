@@ -7,9 +7,9 @@
 html {
     font-size: 62.5%;
     --tomato: rgb(255, 99, 71);
-    --tomatoLight: rgb(255, 107, 81);
+    --tomatoLight: rgb(255, 108, 82);
     --tomatoLighter: rgb(255, 120, 106);
-    --gold: rgb(231, 212, 109);
+    --gold: rgb(211, 197, 118);
 
 }
 
@@ -46,7 +46,7 @@ h1 {
     gap: 2rem;
     padding: 0 0.5rem;
     /* border: 2px solid gold; */
-    margin: 5rem 0;
+    margin: 5rem 0 9rem;
 }
 
 
@@ -84,7 +84,7 @@ h1 {
 .session-count {
     font-size: 3.5rem;
     font-weight: bold;
-    color: var(--tomato);
+    color: var(--tomatoLight);
     /* border: 1px solid red; */
     margin: 0;
     line-height: 1;
@@ -173,7 +173,7 @@ h1 {
 /* footer */
 footer {
     position: absolute;
-    bottom: 1rem;
+    bottom: 2rem;
     left: 50%;
     font-size: 1.3rem;
     transform: translate(-50%);
