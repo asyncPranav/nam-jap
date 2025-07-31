@@ -4,8 +4,13 @@
     box-sizing: border-box;
 }
 
-html{
+html {
     font-size: 62.5%;
+    --tomato: rgb(255, 99, 71);
+    --tomatoLight: rgb(255, 107, 81);
+    --tomatoLighter: rgb(255, 120, 106);
+    --gold: rgb(231, 212, 109);
+
 }
 
 body {
@@ -46,8 +51,10 @@ h1 {
 
 
 .session-card {
-    background: rgba(255, 255, 255, 0.04); /* subtle light over dark */
-    border: 1.5px solid rgba(200, 180, 255, 0.12); /* soft lavender border */
+    background: rgba(255, 255, 255, 0.04);
+    /* subtle light over dark */
+    border: 1.5px solid rgba(200, 180, 255, 0.12);
+    /* soft lavender border */
     border-radius: 12px;
     padding: 0.6rem 1.2rem 1rem;
     color: #f2f2f2;
@@ -67,7 +74,8 @@ h1 {
 
 .session-card:hover {
     transform: scale(1.01);
-    border-color: #c9b6ff;
+    border-color: var(--tomatoLighter);
+
 }
 
 
@@ -76,7 +84,7 @@ h1 {
 .session-count {
     font-size: 3.5rem;
     font-weight: bold;
-    color: #c9b6ff;
+    color: var(--tomato);
     /* border: 1px solid red; */
     margin: 0;
     line-height: 1;
@@ -91,7 +99,7 @@ h1 {
 /* Goal Progress */
 .session-goal {
     font-size: 1rem;
-    color: #7d96c9;
+    color: var(--gold);
     margin-top: 0.4rem;
 }
 
@@ -100,8 +108,7 @@ h1 {
     align-self: flex-end;
     background: none;
     border: none;
-    color: #888;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     cursor: pointer;
     transform: scale(1);
     transition: color 0.2s ease-in-out;
@@ -116,7 +123,8 @@ h1 {
     display: flex;
     justify-content: space-between;
     font-size: 1rem;
-    color: #888;
+    color: #b3b3b3;
+    font-weight: bold;
     margin-top: 0.7rem;
 }
 
@@ -132,30 +140,32 @@ h1 {
     position: fixed;
     bottom: 2rem;
     right: 2rem;
-    z-index: 999; /* ensure it stays above everything */
+    z-index: 999;
+    /* ensure it stays above everything */
 }
 
 /* Icon Button */
 .homeBtn i {
-    padding: 0.8rem;
+    padding: 1.2rem;
     background: rgba(24, 24, 24, 0.4);
     backdrop-filter: blur(10px);
     border-radius: 50%;
-    border: 2px solid rgba(180, 150, 255, 0.2); 
-    font-size: 1.5rem;
-    color: #c9b6ff;
+    border: 2px solid rgba(180, 150, 255, 0.2);
+    font-size: 1.8rem;
+    color: var(--gold);
+
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: transform 0.2s ease, background 0.2s ease;
     cursor: pointer;
 }
 
 .homeBtn i:hover {
-    border: 2px solid rgba(180, 150, 255, 0.458);
+    border: 2px solid var(--tomato);
     background: rgba(44, 44, 44, 0.5);
 }
 
 .homeBtn i:active {
-    border: 2px solid rgba(180, 150, 255, 0.458);
+    border: 2px solid var(--tomato);
     transform: scale(1.12);
 }
 
@@ -171,11 +181,12 @@ footer {
 
 footer p a {
     text-decoration: none;
-    color: #b59af2;
+    color: var(--tomatoLighter);
+    font-weight: bold;
 }
 
 footer p a:hover {
-    color: #8d72cc;
+    color: var(--tomato);
 }
 
 @media (min-width: 600px) {

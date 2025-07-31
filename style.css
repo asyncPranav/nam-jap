@@ -7,6 +7,10 @@
 html {
     font-size: 62.5%;
     height: 100%;
+
+    --tomato : rgb(255, 99, 71);
+    --tomatoLight : rgb(255, 108, 82);
+    --tomatoLighter : rgb(255, 120, 106);
 }
 
 
@@ -42,7 +46,7 @@ body {
 .mantra-text {
     margin-top: 4rem;
     font-size: 2.5rem;
-    color: #c9b6ff;
+    color: var(--tomato);
     /* Soft spiritual purple */
     text-align: center;
 }
@@ -55,9 +59,7 @@ body {
     background-color: #1f1f1f;
     /* background-color: #2c2c2c; */
     border-radius: 50%;
-    box-shadow: 0 0 40px rgba(201, 182, 255, 0.25);
-    /* box-shadow: 0 0 30px rgba(202, 182, 255, 0.134); */
-    /* border: 0.5rem solid rgba(201, 182, 255, 0.05); */
+    box-shadow: 0 0 40px rgba(255, 119, 95, 0.267);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -70,6 +72,8 @@ body {
     font-size: 5rem;
     font-weight: bold;
     color: #c9b6ff;
+    color: var(--tomatoLight);
+
 }
 
 
@@ -81,7 +85,8 @@ body {
     top: 0;
     left: 0;
     border-radius: 50%;
-    background: rgba(201, 182, 255, 0.15);
+    background: rgba(255, 119, 95, 0.15);
+
     transform: scale(1.01);
     /* just beyond the border */
     pointer-events: none;
@@ -143,11 +148,11 @@ body {
 }
 
 #progressBar::-webkit-progress-value {
-    background-color: #c9b6ff;
+    background-color: var(--tomatoLight);
 }
 
 #progressBar::-moz-progress-bar {
-    background-color: #c9b6ff;
+    background-color: var(--tomatoLight);
 }
 
 /* tap area */
@@ -212,7 +217,7 @@ body {
 
 
 .bottom-nav button:hover i {
-    color: #c9b6ff;
+    color: var(--tomatoLighter);
 }
 
 .bottom-nav button:active i {
@@ -288,7 +293,7 @@ body {
     border: none;
     border-radius: 8px;
     cursor: pointer;
-    background-color: #c9b6ff;
+    background-color: var(--tomatoLight);
     color: #121212;
     transition: background 0.2s ease;
     transform: scale(1);
@@ -304,7 +309,7 @@ body {
 }
 
 .goalOkBtn:hover {
-    background-color: #bda6f5;
+    background-color: var(--tomato);
 }
 
 .goalCancelBtn:hover {
@@ -326,7 +331,7 @@ body {
 
     padding: 3rem 2rem;
     /* padding: 3rem 15rem 3rem 3rem; */
-    width: 60%;
+    width: 70%;
     height: 99.8vh;
     position: absolute;
     bottom: 0rem;
@@ -338,12 +343,11 @@ body {
 
 .settingContainer h2{
     font-size: 2rem;
-    padding: 1rem 2rem;
+    padding: 1rem 1.5rem;
     letter-spacing: 0.12rem;
-    color: white;
-    color: tomato;
+    color: var(--tomatoLight);
     margin-bottom: 3.5rem;
-    border-bottom: 1px solid rgb(255, 162, 146);
+    border-bottom: 1px solid var(--tomatoLighter);
 }
 
 .settingContainer ul {
@@ -363,7 +367,7 @@ body {
     display: block;
     text-decoration: none;
     color: rgb(190, 190, 190);
-    padding: 1rem 2rem;
+    padding: 1rem 1.5rem;
     font-size: 1.6rem;
     border: 2px solid transparent;
     border-radius: 0.7rem;
@@ -376,22 +380,23 @@ body {
 }
 
 .settingContainer ul li a:hover {
+    /* border: 2px solid rgba(231, 213, 109, 0.5); */
     border: 2px solid #bda6f569;
     color: rgb(231, 231, 231);
 }
 
 .settingContainer ul li a:hover i.fa-bookmark {
-    color: rgb(30, 188, 240);
+    color: dodgerblue;
 
 }
 
 .settingContainer ul li a:hover i.fa-code {
-    color: rgb(70, 197, 80);
-
+    color: gold;
+    
 }
 
 .settingContainer ul li a:hover i.fa-user-ninja {
-    color: rgb(217, 40, 75);
+    color: lightseagreen;
 
 }
 
