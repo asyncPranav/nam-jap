@@ -456,6 +456,22 @@ body {
     color: violet;
 }
 
+.theme-options .theme i.amber {
+    color: #ffc71f;
+}
+
+.theme-options .theme i.lotus {
+    color: #ffb7c5;    
+}
+
+.theme-options .theme i.ocean {
+    color: #7fbcff;
+}
+
+.theme-options .theme i.moss {
+    color: #88cc99;
+}
+
 .theme-options .theme:hover {
     color: rgb(231, 231, 231);
 }

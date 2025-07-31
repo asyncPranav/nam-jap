@@ -45,6 +45,31 @@ const themes = {
         "--tomatoLighter": "#c9b6ff",
         "--tomatoLightest": "rgba(201, 182, 255, 0.25)",
     },
+    amber: {
+        "--tomato": "#ffc71f",
+        "--tomatoLight": "#ffc71f",
+        "--tomatoLighter": "#ffd54f",
+        "--tomatoLightest": "rgba(255, 214, 79, 0.26)",
+    },
+    lotus: {
+        "--tomato": "#ffb7c5",
+        "--tomatoLight": "#ffc9d3",
+        "--tomatoLighter": "#ffced9",
+        "--tomatoLightest": "rgba(255, 183, 197, 0.25)",
+    },
+    ocean: {
+        "--tomato": "#7fbcff", // calm sky blue
+        "--tomatoLight": "#a3d4ff",
+        "--tomatoLighter": "#c1e4ff",
+        "--tomatoLightest": "rgba(163, 212, 255, 0.25)",
+    },
+    moss: {
+        "--tomato": "#88cc99", // soft sage
+        "--tomatoLight": "#a3d9aa",
+        "--tomatoLighter": "#c5e7c8",
+        "--tomatoLightest": "rgba(163, 217, 170, 0.25)",
+    },
+      
 };
 
 // apply saved theme in local storage

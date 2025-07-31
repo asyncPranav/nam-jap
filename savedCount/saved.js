@@ -5,14 +5,42 @@ const themes = {
         "--tomatoLight": "rgb(255, 108, 82)",
         "--tomatoLighter": "rgb(255, 120, 106)",
         "--tomatoLightest": "rgba(255, 119, 95, 0.267)",
-        "--gold": "rgb(211, 197, 118)",
+        "--gold": "rgba(255, 97, 69, 1)", // orange beige (works well)
     },
     purple: {
-        "--tomato": "#b498ffff",
+        "--tomato": "#b498ff",
         "--tomatoLight": "#c9b6ff",
-        "--tomatoLighter": "#c9b6ff",
+        "--tomatoLighter": "#d8caff",
         "--tomatoLightest": "rgba(201, 182, 255, 0.25)",
-        "--gold": "#a9c6ff",
+        "--gold": "#a78bfa", // deeper purple accent (better contrast)
+    },
+    amber: {
+        "--tomato": "#ffc71f",
+        "--tomatoLight": "#ffdb5c",
+        "--tomatoLighter": "#ffe491",
+        "--tomatoLightest": "rgba(255, 214, 79, 0.26)",
+        "--gold": "#c89e17", // slightly deeper amber
+    },
+    lotus: {
+        "--tomato": "#ffb7c5",
+        "--tomatoLight": "#ffc9d3",
+        "--tomatoLighter": "#ffdde2",
+        "--tomatoLightest": "rgba(255, 183, 197, 0.25)",
+        "--gold": "#db88a1", // rose pink with contrast
+    },
+    ocean: {
+        "--tomato": "#7fbcff",
+        "--tomatoLight": "#a3d4ff",
+        "--tomatoLighter": "#c1e4ff",
+        "--tomatoLightest": "rgba(163, 212, 255, 0.25)",
+        "--gold": "#4594d9", // cooler blue accent
+    },
+    moss: {
+        "--tomato": "#88cc99",
+        "--tomatoLight": "#a3d9aa",
+        "--tomatoLighter": "#c5e7c8",
+        "--tomatoLightest": "rgba(163, 217, 170, 0.25)",
+        "--gold": "#5c9f72", // forest green for contrast
     },
 };
 
