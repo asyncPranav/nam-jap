@@ -37,14 +37,14 @@ const themes = {
         "--tomato": "rgb(255, 99, 71)",
         "--tomatoLight": "rgb(255, 108, 82)",
         "--tomatoLighter": "rgb(255, 120, 106)",
-        "--tomatoLightest": "rgba(255, 119, 95, 0.267)"
+        "--tomatoLightest": "rgba(255, 119, 95, 0.267)",
     },
     purple: {
         "--tomato": "#c9b6ff",
         "--tomatoLight": "#c9b6ff",
         "--tomatoLighter": "#c9b6ff",
-        "--tomatoLightest": "rgba(201, 182, 255, 0.25)"
-    }
+        "--tomatoLightest": "rgba(201, 182, 255, 0.25)",
+    },
 };
 
 // apply saved theme in local storage
@@ -220,6 +220,9 @@ themeItems.forEach((item) => {
             for (const [key, value] of Object.entries(selectedTheme)) {
                 root.style.setProperty(key, value);
             }
+
+            // hide setting popup after selecting theme
+            settingContainer.hidden = true;
 
             // save selected theme
             localStorage.setItem("activeTheme", selected);
