@@ -24,6 +24,7 @@ body {
     height: 100%;
     position: relative;
     /* border: 2px solid green; */
+    overflow: hidden;
 }
 
 .container {
