@@ -33,41 +33,41 @@ const tapArea = document.querySelector(".tapArea");
 
 // custom themes
 const themes = {
-    tomato: {
-        "--tomato": "rgb(255, 99, 71)",
-        "--tomatoLight": "rgb(255, 108, 82)",
-        "--tomatoLighter": "rgb(255, 120, 106)",
-        "--tomatoLightest": "rgba(255, 119, 95, 0.267)",
+    colour: {
+        "--colour": "rgb(255, 99, 71)",
+        "--colourLight": "rgb(255, 108, 82)",
+        "--lighterColour": "rgb(255, 120, 106)",
+        "--lightestColour": "rgba(255, 119, 95, 0.267)",
     },
     purple: {
-        "--tomato": "#c9b6ff",
-        "--tomatoLight": "#c9b6ff",
-        "--tomatoLighter": "#c9b6ff",
-        "--tomatoLightest": "rgba(201, 182, 255, 0.25)",
+        "--colour": "#c9b6ff",
+        "--colourLight": "#c9b6ff",
+        "--lighterColour": "#c9b6ff",
+        "--lightestColour": "rgba(201, 182, 255, 0.25)",
     },
     amber: {
-        "--tomato": "#ffc71f",
-        "--tomatoLight": "#ffc71f",
-        "--tomatoLighter": "#ffd54f",
-        "--tomatoLightest": "rgba(255, 214, 79, 0.26)",
+        "--colour": "#ffc71f",
+        "--colourLight": "#ffc71f",
+        "--lighterColour": "#ffd54f",
+        "--lightestColour": "rgba(255, 214, 79, 0.26)",
     },
     lotus: {
-        "--tomato": "#ffb7c5",
-        "--tomatoLight": "#ffc9d3",
-        "--tomatoLighter": "#ffced9",
-        "--tomatoLightest": "rgba(255, 183, 197, 0.25)",
+        "--colour": "#ffb7c5",
+        "--colourLight": "#ffc9d3",
+        "--lighterColour": "#ffced9",
+        "--lightestColour": "rgba(255, 183, 197, 0.25)",
     },
     ocean: {
-        "--tomato": "#7fbcff", // calm sky blue
-        "--tomatoLight": "#a3d4ff",
-        "--tomatoLighter": "#c1e4ff",
-        "--tomatoLightest": "rgba(163, 212, 255, 0.25)",
+        "--colour": "#7fbcff", // calm sky blue
+        "--colourLight": "#a3d4ff",
+        "--lighterColour": "#c1e4ff",
+        "--lightestColour": "rgba(163, 212, 255, 0.25)",
     },
     moss: {
-        "--tomato": "#88cc99", // soft sage
-        "--tomatoLight": "#a3d9aa",
-        "--tomatoLighter": "#c5e7c8",
-        "--tomatoLightest": "rgba(163, 217, 170, 0.25)",
+        "--colour": "#88cc99", // soft sage
+        "--colourLight": "#a3d9aa",
+        "--lighterColour": "#c5e7c8",
+        "--lightestColour": "rgba(163, 217, 170, 0.25)",
     },
       
 };
