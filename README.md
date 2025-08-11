@@ -42,7 +42,7 @@ A clean, minimal **Nam-Jap (Mantra Counting)** web app to help you stay focused 
 
 1. Clone the repository  
    ```bash
-   git clone https://github.com/your-username/nam-jap.git
+   git clone https://github.com/asyncPranav/nam-jap.git
    cd nam-jap
    ```
 
