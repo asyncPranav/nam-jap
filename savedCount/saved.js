@@ -1,46 +1,46 @@
 // custom themes
 const themes = {
-    tomato: {
-        "--tomato": "rgb(255, 99, 71)",
-        "--tomatoLight": "rgb(255, 108, 82)",
-        "--tomatoLighter": "rgb(255, 120, 106)",
-        "--tomatoLightest": "rgba(255, 119, 95, 0.267)",
-        "--gold": "rgba(255, 97, 69, 1)",
+    colour: {
+        "--colour": "rgb(255, 99, 71)",
+        "--lightColour": "rgb(255, 108, 82)",
+        "--lighterColour": "rgb(255, 120, 106)",
+        "--lightestColour": "rgba(255, 119, 95, 0.267)",
+        "--secondaryColour": "rgba(255, 97, 69, 1)",
     },
     purple: {
-        "--tomato": "#c9b6ff",
-        "--tomatoLight": "#c9b6ff",
-        "--tomatoLighter": "#c9b6ff",
-        "--tomatoLightest": "rgba(201, 182, 255, 0.25)",
-        "--gold": "#a78bfa", // deeper purple 
+        "--colour": "#c9b6ff",
+        "--lightColour": "#c9b6ff",
+        "--lighterColour": "#c9b6ff",
+        "--lightestColour": "rgba(201, 182, 255, 0.25)",
+        "--secondaryColour": "#a78bfa", // deeper purple 
     },
     amber: {
-        "--tomato": "#ffc71f",
-        "--tomatoLight": "#ffc71f",
-        "--tomatoLighter": "#ffd54f",
-        "--tomatoLightest": "rgba(255, 214, 79, 0.26)",
-        "--gold": "#c89e17", // slightly deeper amber
+        "--colour": "#ffc71f",
+        "--lightColour": "#ffc71f",
+        "--lighterColour": "#ffd54f",
+        "--lightestColour": "rgba(255, 214, 79, 0.26)",
+        "--secondaryColour": "#c89e17", // slightly deeper amber
     },
     lotus: {
-        "--tomato": "#ffb7c5",
-        "--tomatoLight": "#ffc9d3",
-        "--tomatoLighter": "#ffced9",
-        "--tomatoLightest": "rgba(255, 183, 197, 0.25)",
-        "--gold": "#db88a1", // rose pink with contrast
+        "--colour": "#ffb7c5",
+        "--lightColour": "#ffc9d3",
+        "--lighterColour": "#ffced9",
+        "--lightestColour": "rgba(255, 183, 197, 0.25)",
+        "--secondaryColour": "#db88a1", // rose pink with contrast
     },
     ocean: {
-        "--tomato": "#7fbcff", // calm sky blue
-        "--tomatoLight": "#a3d4ff",
-        "--tomatoLighter": "#c1e4ff",
-        "--tomatoLightest": "rgba(163, 212, 255, 0.25)",
-        "--gold": "#4594d9", // cooler blue 
+        "--colour": "#7fbcff", // calm sky blue
+        "--lightColour": "#a3d4ff",
+        "--lighterColour": "#c1e4ff",
+        "--lightestColour": "rgba(163, 212, 255, 0.25)",
+        "--secondaryColour": "#4594d9", // cooler blue 
     },
     moss: {
-        "--tomato": "#88cc99", // soft sage
-        "--tomatoLight": "#a3d9aa",
-        "--tomatoLighter": "#c5e7c8",
-        "--tomatoLightest": "rgba(163, 217, 170, 0.25)",
-        "--gold": "#5c9f72", // forest green for contrast
+        "--colour": "#88cc99", // soft sage
+        "--lightColour": "#a3d9aa",
+        "--lighterColour": "#c5e7c8",
+        "--lightestColour": "rgba(163, 217, 170, 0.25)",
+        "--secondaryColour": "#5c9f72", // forest green for contrast
     },
       
 };
