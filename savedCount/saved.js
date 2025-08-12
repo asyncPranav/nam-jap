@@ -1,47 +1,48 @@
-// themes
+// custom themes
 const themes = {
-    colour: {
-        "--colour": "rgb(255, 99, 71)",
-        "--colourLight": "rgb(255, 108, 82)",
-        "--lighterColour": "rgb(255, 120, 106)",
-        "--lightestColour": "rgba(255, 119, 95, 0.267)",
-        "--secondaryColour": "rgba(255, 97, 69, 1)", // orange beige (works well)
+    tomato: {
+        "--tomato": "rgb(255, 99, 71)",
+        "--tomatoLight": "rgb(255, 108, 82)",
+        "--tomatoLighter": "rgb(255, 120, 106)",
+        "--tomatoLightest": "rgba(255, 119, 95, 0.267)",
+        "--gold": "rgba(255, 97, 69, 1)",
     },
     purple: {
-        "--colour": "#b498ff",
-        "--colourLight": "#c9b6ff",
-        "--lighterColour": "#d8caff",
-        "--lightestColour": "rgba(201, 182, 255, 0.25)",
-        "--secondaryColour": "#a78bfa", // deeper purple accent (better contrast)
+        "--tomato": "#c9b6ff",
+        "--tomatoLight": "#c9b6ff",
+        "--tomatoLighter": "#c9b6ff",
+        "--tomatoLightest": "rgba(201, 182, 255, 0.25)",
+        "--gold": "#a78bfa", // deeper purple 
     },
     amber: {
-        "--colour": "#ffc71f",
-        "--colourLight": "#ffdb5c",
-        "--lighterColour": "#ffe491",
-        "--lightestColour": "rgba(255, 214, 79, 0.26)",
-        "--secondaryColour": "#c89e17", // slightly deeper amber
+        "--tomato": "#ffc71f",
+        "--tomatoLight": "#ffc71f",
+        "--tomatoLighter": "#ffd54f",
+        "--tomatoLightest": "rgba(255, 214, 79, 0.26)",
+        "--gold": "#c89e17", // slightly deeper amber
     },
     lotus: {
-        "--colour": "#ffb7c5",
-        "--colourLight": "#ffc9d3",
-        "--lighterColour": "#ffdde2",
-        "--lightestColour": "rgba(255, 183, 197, 0.25)",
-        "--secondaryColour": "#db88a1", // rose pink with contrast
+        "--tomato": "#ffb7c5",
+        "--tomatoLight": "#ffc9d3",
+        "--tomatoLighter": "#ffced9",
+        "--tomatoLightest": "rgba(255, 183, 197, 0.25)",
+        "--gold": "#db88a1", // rose pink with contrast
     },
     ocean: {
-        "--colour": "#7fbcff",
-        "--colourLight": "#a3d4ff",
-        "--lighterColour": "#c1e4ff",
-        "--lightestColour": "rgba(163, 212, 255, 0.25)",
-        "--secondaryColour": "#4594d9", // cooler blue accent
+        "--tomato": "#7fbcff", // calm sky blue
+        "--tomatoLight": "#a3d4ff",
+        "--tomatoLighter": "#c1e4ff",
+        "--tomatoLightest": "rgba(163, 212, 255, 0.25)",
+        "--gold": "#4594d9", // cooler blue 
     },
     moss: {
-        "--colour": "#88cc99",
-        "--colourLight": "#a3d9aa",
-        "--lighterColour": "#c5e7c8",
-        "--lightestColour": "rgba(163, 217, 170, 0.25)",
-        "--secondaryColour": "#5c9f72", // forest green for contrast
+        "--tomato": "#88cc99", // soft sage
+        "--tomatoLight": "#a3d9aa",
+        "--tomatoLighter": "#c5e7c8",
+        "--tomatoLightest": "rgba(163, 217, 170, 0.25)",
+        "--gold": "#5c9f72", // forest green for contrast
     },
+      
 };
 
 // Load theme from localStorage

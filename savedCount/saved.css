@@ -6,12 +6,11 @@
 
 html {
     font-size: 62.5%;
-    --colour: rgb(255, 99, 71);
-    --colourLight: rgb(255, 108, 82);
-    --lighterColour: rgb(255, 120, 106);
-    --lightestColour: rgba(255, 119, 95, 0.267);
-    --secondaryColour: rgb(211, 197, 118);
-
+    --tomato: rgb(255, 99, 71);
+    --tomatoLight: rgb(255, 108, 82);
+    --tomatoLighter: rgb(255, 120, 106);
+    --tomatoLightest: rgba(255, 119, 95, 0.267);
+    --gold: rgb(211, 197, 118);
 }
 
 body {
@@ -46,7 +45,7 @@ h1 {
     grid-template-columns: 1fr;
     gap: 2rem;
     padding: 0 0.5rem;
-    /* border: 2px solid secondaryColour; */
+    /* border: 2px solid gold; */
     margin: 5rem 0 9rem;
 }
 
@@ -75,7 +74,7 @@ h1 {
 
 .session-card:hover {
     transform: scale(1.01);
-    border-color: var(--lighterColour);
+    border-color: var(--tomatoLighter);
 
 }
 
@@ -85,7 +84,7 @@ h1 {
 .session-count {
     font-size: 3.5rem;
     font-weight: bold;
-    color: var(--colourLight);
+    color: var(--tomatoLight);
     /* border: 1px solid red; */
     margin: 0;
     line-height: 1;
@@ -100,7 +99,7 @@ h1 {
 /* Goal Progress */
 .session-goal {
     font-size: 1rem;
-    color: var(--secondaryColour);
+    color: var(--gold);
     margin-top: 0.4rem;
 }
 
@@ -153,7 +152,7 @@ h1 {
     border-radius: 50%;
     border: 2px solid rgba(180, 150, 255, 0.2);
     font-size: 1.8rem;
-    color: var(--secondaryColour);
+    color: var(--gold);
 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: transform 0.2s ease, background 0.2s ease;
@@ -161,12 +160,12 @@ h1 {
 }
 
 .homeBtn i:hover {
-    border: 2px solid var(--colourLight);
+    border: 2px solid var(--tomatoLight);
     background: rgba(44, 44, 44, 0.5);
 }
 
 .homeBtn i:active {
-    border: 2px solid var(--colourLight);
+    border: 2px solid var(--tomatoLight);
     transform: scale(1.12);
 }
 
@@ -181,18 +180,18 @@ footer {
 }
 
 footer p i{
-    color: var(--secondaryColour);
+    color: var(--gold);
 
 }
 
 footer p a {
     text-decoration: none;
-    color: var(--lighterColour);
+    color: var(--tomatoLighter);
     font-weight: bold;
 }
 
 footer p a:hover {
-    color: var(--colour);
+    color: var(--tomato);
 }
 
 @media (min-width: 600px) {
