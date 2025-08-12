@@ -1,6 +1,6 @@
 # 🕉️ Nam-Jap Counter App
 
-A clean, minimal **Nam-Jap (Mantra Counting)** web app to help you stay focused during your spiritual or meditation practices. Built with **vanilla JavaScript** and supports multiple color themes like Tomato, Purple, Lotus, and Ocean 🌊.
+A clean, minimal **Nam-Jap (Mantra Counting)** web app to help you stay focused during your spiritual or meditation practices. Built with **vanilla JavaScript** and supports multiple color themes like colour, Purple, Lotus, and Ocean 🌊.
 <br>
 <br>
 
@@ -14,14 +14,14 @@ A clean, minimal **Nam-Jap (Mantra Counting)** web app to help you stay focused 
 - 🔢 **Tap Counter**: Count your mantra/japa repetitions with a single tap
 - 🎯 **Custom Goal**: Set a target and track your progress with a visual progress bar
 - 📳 **Vibration Feedback**: Phone vibrates gently on each tap (can be toggled ON/OFF)
-- 🎨 **Theme Switcher**: Switch between calming color themes like Tomato, Purple, Amber, Lotus, Ocean, and more
+- 🎨 **Theme Switcher**: Switch between calming color themes like colour, Purple, Amber, Lotus, Ocean, and more
 - 💾 **Persistent Settings**: Remembers your selected theme and vibration setting even after refresh
 - 💡 **Modern UI**: Minimal, mobile-first design with a frosted glass effect
 <br>
 
 
 ## 🌈 Available Themes
-- 🍅 Tomato (default)
+- 🍅 colour (default)
 - 🔮 Purple
 - 🧡 Amber
 - 🌸 Lotus
